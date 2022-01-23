@@ -3,8 +3,8 @@ import pyspark.sql.functions as F
 from pyspark.sql.window import Window
 import os
 
-bucket_name = 'dataproc-staging-europe-central2-300160907864-k2bez0xq'
-infolder = 'raw'
+bucket_name = 'your_bucket'
+infolder = 'in'
 outfolder = 'out'
 
 # List of articles (starting with) to be disregarded
