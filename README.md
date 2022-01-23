@@ -23,12 +23,12 @@ You can also parallelize the downloading, but placing the commands in a text fil
 sudo apt-get install parallel
 parallel -j 10 < tasks.txt
 ```
-3. Create a Spark Cluster in Google DataProc with Jupyter Notebook enabled. Use the bucket you created earlier for staging
-4. Goto the Web Interfaces of your cluster, open Jypter and create a new notebook
-5. Paste the contents of spark.py into a cell and adjust the needed variables
-6. Run the cell and wait until it finishes
-7. You can use Google's BigQuery to load the Parquet file directly
-8. You can also use Google's Data Studio for visualization
+3. Create a Spark Cluster in Google DataProc with Jupyter Notebook enabled. Use the bucket you created earlier for staging.
+4. Goto the Web Interfaces of your cluster, open Jypter and create a new notebook.
+5. Paste the contents of spark.py into a cell and adjust the needed variables. The code loads all csv's from a folder, processes them and dumps a parquet file.
+7. Run the cell and wait until it finishes.
+8. Use Google's BigQuery to load the Parquet file directly.
+9. Use Google's Data Studio for visualization.
 
 ### Outcome:
-I downloaded the data for December 2021 and January 2022 and created this [dashboard](https://datastudio.google.com/reporting/ee1602bb-913d-4625-952c-06dfd45c6512/page/sn7jC) showing the top 20 articles by user views per day.
+I downloaded the data for December 2021 and January 2022 and created [this dashboard](https://datastudio.google.com/reporting/ee1602bb-913d-4625-952c-06dfd45c6512/page/sn7jC) showing the top 20 articles by user views per day.
