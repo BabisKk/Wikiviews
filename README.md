@@ -24,8 +24,8 @@ sudo apt-get install parallel
 parallel -j 10 < tasks.txt
 ```
 3. Create a Spark Cluster in Google DataProc with Jupyter Notebook enabled. Use the bucket you created earlier for staging.
-4. Goto the Web Interfaces of your cluster, open Jypter and create a new notebook.
-5. Paste the contents of spark.py into a cell and adjust the needed variables. The code loads all csv's from a folder, processes them and dumps a parquet file:
+4. Goto the Web Interfaces of your cluster, open Jypter and create a new notebook. Alternatively you can create a Spark job.
+5. Paste the contents of spark.py (shown also below) into a cell and adjust the needed variables. The code loads all csv's from a folder, processes them and dumps a parquet file:
 ```python
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType
 import pyspark.sql.functions as F
